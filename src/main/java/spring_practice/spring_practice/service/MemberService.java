@@ -2,6 +2,7 @@ package spring_practice.spring_practice.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import spring_practice.spring_practice.domain.Member;
 import spring_practice.spring_practice.repository.MemberRepository;
 import spring_practice.spring_practice.repository.MemoryMemberRepository;
@@ -9,6 +10,7 @@ import spring_practice.spring_practice.repository.MemoryMemberRepository;
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;
