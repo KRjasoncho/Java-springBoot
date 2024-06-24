@@ -9,10 +9,10 @@ import spring_practice.spring_practice.repository.MemoryMemberRepository;
 import java.util.List;
 import java.util.Optional;
 
-
 public class MemberService {
 
     private final MemberRepository memberRepository;
+
 
     public MemberService(MemberRepository memberRepository){
         this.memberRepository = memberRepository;
